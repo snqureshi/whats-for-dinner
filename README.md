@@ -10,7 +10,7 @@ I hope to create a website in which users can input the ingredients they already
 
 [Edamam Recipes] (https://api.edamam.com/search?q=beef&app_id=a831c57c&app_key=a221d866f1d02a09e0fd4777785d31c4)
 
-``json
+```json
 {
     "q": "beef",
     "from": 0,
@@ -77,7 +77,7 @@ I hope to create a website in which users can input the ingredients they already
                         "label": "Energy",
                         "quantity": 2120.44,
                         "unit": "kcal"
-                    }``
+                    }```
 
 ## Wireframes
 [Recipe Finder Wireframe] (https://whimsical.com/ga-sei-recipe-finder-wireframe-D48Dw7XvQhnPSyLWZpgzte)
