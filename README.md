@@ -10,7 +10,7 @@ I hope to create a website in which users can input the ingredients they already
 
 [Edamam Recipes] (https://api.edamam.com/search?q=beef&app_id=a831c57c&app_key=a221d866f1d02a09e0fd4777785d31c4)
 
-``
+``json
 {
     "q": "beef",
     "from": 0,
@@ -80,12 +80,7 @@ I hope to create a website in which users can input the ingredients they already
                     }``
 
 ## Wireframes
-
-Upload images of your wireframes to an image hosting site or add them to an assets folder in your repo and link them here with a description of each specific wireframe.
-
-### MVP/PostMVP
-
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+[Recipe Finder Wireframe] (https://whimsical.com/ga-sei-recipe-finder-wireframe-D48Dw7XvQhnPSyLWZpgzte)
 
 #### MVP 
 *These are examples only. Replace with your own MVP features.*
