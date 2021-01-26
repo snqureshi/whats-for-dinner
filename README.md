@@ -116,16 +116,14 @@ I hope to create a website in which users can input the ingredients they already
 
 [Recipe Finder Priority Matrix](https://app.conceptboard.com/export/46a089f2-0ca7-47c8-ae10-eed47605ad7c/versions/;hi=1;low=390)
 
-![Recipe Finder Priority Matrix Image](./Screen Shot 2021-01-26 at 9.05.33 AM.png)
-
 ## Timeframes
 
 | Component                                                                   | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Creating Initial HTML/Creating Form Input & Search Button                   |    H     |    1.5 hrs     |               |             |
-| Adding Basic CSS/Formatting Background Image for header                     |    H     |    1.5 hrs     |               |             |
-| Writing JS Pseudocode                                                       |    H     |    1.5 hrs     |               |             |
-| Linking API to fetch data when given search input                           |    H     |     2 hrs      |               |             |
+| Creating Initial HTML/Creating Form Input & Search Button                   |    H     |    1.5 hrs     |     1 hr      |             |
+| Adding Basic CSS/Formatting Background Image for header                     |    H     |    1.5 hrs     |    1.5 hrs    |             |
+| Writing JS Pseudocode                                                       |    H     |    1.5 hrs     |    0.5 hrs    |             |
+| Linking API to fetch data when given search input                           |    H     |     2 hrs      |     1 hr      |             |
 | Appending selected data from API to DOM                                     |    H     |     4 hrs      |               |             |
 | Opening Recipe Link in new tab                                              |    H     |      1 hr      |               |             |
 | Clearing DOM when new search is run                                         |    H     |     2 hrs      |               |             |

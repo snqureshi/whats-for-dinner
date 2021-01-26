@@ -28,11 +28,17 @@ body {
 .banner-subheading {
   font-family: "Times New Roman", Times, serif;
   font-size: 1rem;
-  font-weight: 200;
+  font-weight: 800;
   color: white;
   margin: 0 auto;
   position: absolute;
   top: 22%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+form {
+  border: 1px solid white;
+  margin: 20px 150px;
+  padding: 30px;
 }
