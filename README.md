@@ -113,7 +113,7 @@ I hope to create a website in which users can input the ingredients they already
 ## Priority Matrix
 
 [Recipe Finder Priority Matrix] (https://app.conceptboard.com/export/46a089f2-0ca7-47c8-ae10-eed47605ad7c/versions/;hi=1;low=390)
-!(https://app.conceptboard.com/export/46a089f2-0ca7-47c8-ae10-eed47605ad7c/versions/;hi=1;low=390)
+
 
 ## Timeframes
 
