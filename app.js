@@ -30,7 +30,8 @@ async function getRecipe() {
 
     //select the name of each result and append it to container
       let label = document.createElement('h3')
-      label.textContent = recipe.label
+      // console.log(recipe.recipe.label)
+      label.textContent = recipe.recipe.label
       console.log(label)
       individualRecipes.append(label)
 
