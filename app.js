@@ -12,19 +12,27 @@ async function getRecipe() {
 
   //Define a variable to get data from API
   let recipeData = await axios.get(url)
-  console.log(recipeData)
+  console.log(recipeData.data.hits)
+
   //try/catch method for getting API data
   try {
-    recipeData.data.Search.forEach(recipe => {
-      
-    
-    // wrap everything in the forEach function until after catch
-
     //create section for appending search results 
+      let searchContainer = document.querySelector('.result-container')
+      console.log(searchContainer)
 
+  // wrap everything in the forEach function until after catch
+    recipeData.data.hits.forEach(recipe => {
+      
     //create container for each seperate result & append it to the search results section
+      let individualRecipes = document.createElement('div')
+      individualRecipes.classList.add('ind-recipe')
+      searchContainer.append(individualRecipes)
 
     //select the name of each result and append it to container
+      let label = document.createElement('h3')
+      label.textContent = recipe.label
+      console.log(label)
+      individualRecipes.append(label)
 
     //select the image of each result and append it to container
 
