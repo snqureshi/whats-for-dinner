@@ -104,7 +104,7 @@ I hope to create a website in which users can input the ingredients they already
 | Day    | Deliverable                                                                                             | Status     |
 | ------ | ------------------------------------------------------------------------------------------------------- | ---------- |
 | Jan 25 | Project Overview / Wireframes / Priority Matrix / Timeframes                                            | Complete   |
-| Jan 26 | Project Approval / Basic Application Structure (HTML, CSS), Pseudocode functionality for JS             | Incomplete |
+| Jan 26 | Project Approval / Basic Application Structure (HTML, CSS), Pseudocode functionality for JS             | Complete   |
 | Jan 27 | Getting results from API using search button, Appending the selected data to webpage in correct format  | Incomplete |
 | Jan 28 | Clearing search results when there is a new search input, Opening new tab when recipe linked is clicked | Incomplete |
 | Jan 29 | Add breakpoint to implement responsiveness, PMVP: Add second API for dietary restriction drop down menu | Incomplete |
