@@ -1,17 +1,17 @@
 //Define Domain, API-id, API-key, base URL
 //Define an input value to be the input from the search input
 const domain = `https://api.edamam.com/search?`
-let inputValue = document.querySelector('.search-input').value
 const appId = 'a831c57c'
 const appKey = 'a221d866f1d02a09e0fd4777785d31c4'
-const url = `'https://cors-anywhere.herokuapp.com/${domain}q=${inputValue}&appid=${appId}&appkey=${appKey}`
 
 //Define async function getRecipe
 async function getRecipe() {
+  let inputValue = document.querySelector('.search-input').value
   console.log(inputValue)
+  const url = `${domain}q=${inputValue}&app_id=${appId}&app_key=${appKey}`
 
   //Define a variable to get data from API
-  let recipeData = await axios.get('url')
+  let recipeData = await axios.get(url)
   console.log(recipeData)
   //try/catch method for getting API data
   // wrap everything in the forEach function until after catch
