@@ -4,13 +4,13 @@
 
 ## Project Description
 
-I hope to create a website in which users can input the ingredients they already have at home/or are interested in and find recipes, images and nutritional information based on their search. 
+I hope to create a website in which users can input the ingredients they already have at home/or are interested in and find recipes. The search results will display the name of the dish, an image, the ingredients list and the calorie count based on their search query. 
 
 ## API and Data Sample
 
 [Edamam Recipes] (https://api.edamam.com/search?q=beef&app_id=a831c57c&app_key=a221d866f1d02a09e0fd4777785d31c4)
 
-```json
+```
 {
     "q": "beef",
     "from": 0,
@@ -78,36 +78,36 @@ I hope to create a website in which users can input the ingredients they already
                         "quantity": 2120.44,
                         "unit": "kcal"
                     }```
-
+```
 ## Wireframes
 [Recipe Finder Wireframe] (https://whimsical.com/ga-sei-recipe-finder-wireframe-D48Dw7XvQhnPSyLWZpgzte)
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
-- Find and use external api 
-- Render data on page 
-- Allow user to choose favorites 
+-Allow for users to search recipes using keywords and the search button
+-Display up to 10 search results with name of recipe, image, calories, and ingredients list
+-Allow users to open up recipe instructions in a new tab
+-Clear search results when there's another search & render new results
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
-- Add second API
-- Use local storage to save user favorites
+- Allow users to hover over the recipe link and preview instructions.
+- Recommend other recipes based on their current search result diet label at the bottom of the page 
+- Add a second API to allow users to search by dietary preferences/allergy preferences using a drop down menu option. 
+- Add an animated logo next to the search bar 
+- Allow users to select favorites with a heart/star button
 
 ## Project Schedule
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
-
 |  Day | Deliverable | Status
 |---|---| ---|
-|Jan 25-26| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
-|Jan 26| Project Approval | Incomplete
-|Jan 27| Core Application Structure (HTML, CSS, etc.) | Incomplete
-|Jan 28| Initial Clickable Model  | Incomplete
-|Jan 29| MVP | Incomplete
+|Jan 25| Project Overview / Wireframes / Priority Matrix / Timeframes | Complete 
+|Jan 26| Project Approval / Basic Application Structure (HTML, CSS), Write Pseudocode for JS| Incomplete
+|Jan 27| Getting results from API using search button, Appending the selected data to webpage in correct format| Incomplete
+|Jan 28| Clearing search results when there is a new search input, Opening new tab when recipe linked is clicked| Incomplete
+|Jan 29| PMVPs: Add second API for dietary restriction drop down menu | Incomplete
+|Jan 30| PMVPs: Open a preview page when hovering over recipe link | Incomplete
+|Jan 31| Add additional CSS: Animated Logo/ Image transitions | Incomplete
 |Feb 1| Presentations/Project Submission | Incomplete
 
 ## Priority Matrix
