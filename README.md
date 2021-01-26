@@ -8,7 +8,7 @@ I hope to create a website in which users can input the ingredients they already
 
 ## API and Data Sample
 
-[Edamam Recipes] (https://api.edamam.com/search?q=beef&app_id=a831c57c&app_key=a221d866f1d02a09e0fd4777785d31c4)
+[Edamam Recipes](https://api.edamam.com/search?q=beef&app_id=a831c57c&app_key=a221d866f1d02a09e0fd4777785d31c4)
 
 ```
 {
@@ -80,7 +80,7 @@ I hope to create a website in which users can input the ingredients they already
                     }```
 ```
 ## Wireframes
-[Recipe Finder Wireframe] (https://whimsical.com/ga-sei-recipe-finder-wireframe-D48Dw7XvQhnPSyLWZpgzte)
+[Recipe Finder Wireframe](https://whimsical.com/ga-sei-recipe-finder-wireframe-D48Dw7XvQhnPSyLWZpgzte)
 
 #### MVP 
 
@@ -112,7 +112,7 @@ I hope to create a website in which users can input the ingredients they already
 
 ## Priority Matrix
 
-[Recipe Finder Priority Matrix] (https://app.conceptboard.com/export/46a089f2-0ca7-47c8-ae10-eed47605ad7c/versions/;hi=1;low=390)
+[Recipe Finder Priority Matrix](https://app.conceptboard.com/export/46a089f2-0ca7-47c8-ae10-eed47605ad7c/versions/;hi=1;low=390)
 
 
 ## Timeframes
