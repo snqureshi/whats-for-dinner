@@ -105,14 +105,14 @@ I hope to create a website in which users can input the ingredients they already
 |Jan 26| Project Approval / Basic Application Structure (HTML, CSS), Write Pseudocode for JS| Incomplete
 |Jan 27| Getting results from API using search button, Appending the selected data to webpage in correct format| Incomplete
 |Jan 28| Clearing search results when there is a new search input, Opening new tab when recipe linked is clicked| Incomplete
-|Jan 29| PMVPs: Add second API for dietary restriction drop down menu | Incomplete
+|Jan 29| Add breakpoint to implement responsiveness, PMVP: Add second API for dietary restriction drop down menu | Incomplete
 |Jan 30| PMVPs: Open a preview page when hovering over recipe link | Incomplete
 |Jan 31| Add additional CSS: Animated Logo/ Image transitions | Incomplete
 |Feb 1| Presentations/Project Submission | Incomplete
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+[Recipe Finder Priority Matrix] (https://app.conceptboard.com/export/46a089f2-0ca7-47c8-ae10-eed47605ad7c/versions/;hi=1;low=390)
 
 ## Timeframes
 
