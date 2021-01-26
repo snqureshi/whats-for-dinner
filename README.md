@@ -84,10 +84,10 @@ I hope to create a website in which users can input the ingredients they already
 
 #### MVP 
 
--Allow for users to search recipes using keywords and the search button
--Display up to 10 search results with name of recipe, image, calories, and ingredients list
--Allow users to open up recipe instructions in a new tab
--Clear search results when there's another search & render new results
+- Allow for users to search recipes using keywords and the search button
+- Display up to 10 search results with name of recipe, image, calories, and ingredients list
+- Allow users to open up recipe instructions in a new tab
+- Clear search results when there's another search & render new results
 
 #### PostMVP  
 
