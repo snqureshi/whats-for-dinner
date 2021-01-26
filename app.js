@@ -15,6 +15,9 @@ async function getRecipe() {
   console.log(recipeData)
   //try/catch method for getting API data
   try {
+    recipeData.data.Search.forEach(recipe => {
+      
+    
     // wrap everything in the forEach function until after catch
 
     //create section for appending search results 
@@ -30,7 +33,8 @@ async function getRecipe() {
     //select the ingredient list of each result and append it to container
 
     //select recipe link of each result and allow for link to open in a new tab
-  } catch (error) {
+  });
+    } catch (error) {
     console.log('Ooops! There was an error, try again later.')
   }
   //catch error message
