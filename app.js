@@ -31,32 +31,38 @@ async function getRecipe() {
 
     //select the image of each result and append it to container
     let image = document.createElement('img')
+    image.classList.add('recipe-image')
     image.src = recipe.recipe.image
     individualRecipes.append(image)
+    
+    //create section for appending search result text
+    let textContainer = document.createElement('div')
+    textContainer.classList.add('.text-container')
+    individualRecipes.append(textContainer)
       
     //select the name of each result and append it to container
     let label = document.createElement('h2')
     // console.log(recipe.recipe.label)
     label.textContent = recipe.recipe.label
     // console.log(label)
-    individualRecipes.append(label)
+    textContainer.append(label)
 
     //select the calories of each result and append it to container
     let calories = document.createElement('h4')
-      calories.textContent = `Total Calories = ${recipe.recipe.calories}`
-    individualRecipes.append(calories)
+    calories.textContent = `Total Calories = ${recipe.recipe.calories}`
+    textContainer.append(calories)
       
     //select the ingredient list of each result and append it to container
     let ingredients = document.createElement('p')
     ingredients.textContent = `You'll need ${recipe.recipe.ingredientLines}`
-  individualRecipes.append(ingredients)
+    textContainer.append(ingredients)
 
     //select recipe link of each result and allow for link to open in a new tab
-      let recipeLink = document.createElement('a')
-      recipeLink.textContent = `Link to Instructions`
-      recipeLink.href = `${recipe.recipe.url}`
-      recipeLink.setAttribute("target","_blank")
-      individualRecipes.append(recipeLink)
+    let recipeLink = document.createElement('a')
+    recipeLink.textContent = `Link to Full Instructions`
+    recipeLink.href = `${recipe.recipe.url}`
+    recipeLink.setAttribute("target","_blank")
+    textContainer.append(recipeLink)
       
   });
     } catch (error) {
