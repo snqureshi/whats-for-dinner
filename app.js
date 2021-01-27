@@ -71,9 +71,10 @@ async function getRecipe() {
   }
   //catch error message
 }
+
 //select search button, add event listener for click, invoke getRecipe
 let search = document.querySelector('.submit')
-search.addEventListener('click',getRecipe)
+search.addEventListener('click', getRecipe)
 
 //create function to remove last child of container, invoke it before forEach function
 function removeRecipe() {
