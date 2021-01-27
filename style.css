@@ -1,6 +1,8 @@
 body {
   background-color: #213035;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .banner-container {
@@ -13,7 +15,7 @@ body {
 
 .banner-heading {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 4rem;
+  font-size: 4em;
   font-weight: 600;
   color: white;
   text-transform: uppercase;
@@ -26,12 +28,12 @@ body {
 
 .banner-subheading {
   font-family: "Times New Roman", Times, serif;
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: 800;
   color: white;
   margin: 0 auto;
   position: absolute;
-  top: 22%;
+  top: 18%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -39,9 +41,23 @@ body {
 form {
   border: 1px solid #213035;
   border-radius: 2em;
-  background-color: #2d898b;
+  background: #2a9d8f;
   margin: 20px 150px;
   padding: 30px;
+}
+
+.search-input {
+  font-size: large;
+  padding: 10px;
+}
+
+.submit {
+  font-size: large;
+  padding: 10px;
+  border-radius: 1em;
+  background-color: #fca311;
+  color: white;
+  font-weight: bold;
 }
 
 .result-container {
@@ -51,23 +67,34 @@ form {
 }
 
 .ind-recipe {
-  border: 1px solid white;
+  border: 2px solid #e76f51;
   margin: 20px;
   padding: 20px;
   background-color: #f8b836;
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   justify-content: center;
 }
 
 .recipe-image {
   max-width: 300px;
   max-height: 300px;
-  border-radius: 1em;
 }
 
 .text-container {
   display: flex;
   flex-direction: column;
   padding: 15px 25px;
+}
+
+@media only screen and (max-width: 700px) {
+  .ind-recipe {
+    flex-flow: column;
+  }
+  .recipe-image {
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 2;
+  }
 }

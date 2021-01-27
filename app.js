@@ -26,9 +26,9 @@ async function getRecipe() {
     recipeData.data.hits.forEach(recipe => {
       
     //create container for each seperate result & append it to the search results section
-      let individualRecipes = document.createElement('div')
-      individualRecipes.classList.add('ind-recipe')
-      searchContainer.append(individualRecipes)
+    let individualRecipes = document.createElement('div')
+    individualRecipes.classList.add('ind-recipe')
+    searchContainer.append(individualRecipes)
 
     //select the image of each result and append it to container
     let image = document.createElement('img')
@@ -63,7 +63,14 @@ async function getRecipe() {
     recipeLink.textContent = `Link to Full Instructions`
     recipeLink.href = `${recipe.recipe.url}`
     recipeLink.setAttribute("target","_blank")
-    textContainer.append(recipeLink)
+      textContainer.append(recipeLink)
+      
+    //Add footer with recommendations from same diet labels
+    // let moreRecipes = document.createElement('h3')
+    // moreRecipes.classList.add('footer-recipes')
+    // moreRecipes.textContent = recipe.recipe.dietLabels
+    // console.log(moreRecipes)
+    // footer.append(moreRecipes)
       
   });
     } catch (error) {
@@ -86,5 +93,4 @@ function removeRecipe() {
 
 //PMVPS: 
 //Add second API for drop down menu and let them choose dietary preferences
-//Add footer with recommendations from same diet labels
 //Add a star button to select favorites

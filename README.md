@@ -122,12 +122,12 @@ I hope to create a website in which users can input the ingredients they already
 | --------------------------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
 | Creating Initial HTML/Creating Form Input & Search Button                   |    H     |    1.5 hrs     |     1 hr      |             |
 | Adding Basic CSS/Formatting Background Image for header                     |    H     |    1.5 hrs     |    1.5 hrs    |             |
-| Writing JS Pseudocode                                                       |    H     |    1.5 hrs     |    0.5 hrs    |             |
+| Writing JS Pseudocode                                                       |    H     |    1.5 hrs     |    0.75 hr    |             |
 | Linking API to fetch data when given search input                           |    H     |     2 hrs      |     1 hr      |             |
 | Appending selected data from API to DOM                                     |    H     |     4 hrs      |    1.5 hr     |             |
 | Opening Recipe Link in new tab                                              |    H     |      1 hr      |    0.25 hr    |             |
-| Clearing DOM when new search is run                                         |    H     |     2 hrs      |    0.5 hrs    |             |
-| Adding Flexbox styling to format like wireframe                             |    H     |    3.5 hrs     |     1 hr      |             |
+| Clearing DOM when new search is run                                         |    H     |     2 hrs      |     1 hrs     |             |
+| Adding Flexbox styling to format like wireframe                             |    H     |    3.5 hrs     |    1.5 hrs    |             |
 | Adding Media Query for mobile viewing                                       |    H     |    1.5 hrs     |               |             |
 | Adding Second API for dietary restrictions drop-down menu search            |    H     |      4hrs      |               |             |
 | Adding extra selector (ie.Diet-label) to render 3 suggestions on the footer |    H     |      3hrs      |               |             |
