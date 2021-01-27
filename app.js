@@ -29,19 +29,31 @@ async function getRecipe() {
       searchContainer.append(individualRecipes)
 
     //select the name of each result and append it to container
-      let label = document.createElement('h3')
+      let label = document.createElement('h2')
       // console.log(recipe.recipe.label)
       label.textContent = recipe.recipe.label
-      console.log(label)
+      // console.log(label)
       individualRecipes.append(label)
 
     //select the image of each result and append it to container
+    let image = document.createElement('img')
+    image.src = recipe.recipe.image
+    individualRecipes.append(image)
 
     //select the calories of each result and append it to container
-
+    let calories = document.createElement('h4')
+      calories.textContent = `Total Calories = ${recipe.recipe.calories}`
+    individualRecipes.append(calories)
+      
     //select the ingredient list of each result and append it to container
+    let ingredients = document.createElement('p')
+    ingredients.textContent = `You'll need ${recipe.recipe.ingredientLines}`
+  individualRecipes.append(ingredients)
 
     //select recipe link of each result and allow for link to open in a new tab
+      let recipeLink = document.createElement('p')
+      recipeLink.textContent = `Link to Instructions: ${recipe.recipe.url}`
+      individualRecipes.append(recipeLink)
   });
     } catch (error) {
     console.log('Ooops! There was an error, try again later.')

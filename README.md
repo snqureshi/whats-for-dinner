@@ -124,7 +124,7 @@ I hope to create a website in which users can input the ingredients they already
 | Adding Basic CSS/Formatting Background Image for header                     |    H     |    1.5 hrs     |    1.5 hrs    |             |
 | Writing JS Pseudocode                                                       |    H     |    1.5 hrs     |    0.5 hrs    |             |
 | Linking API to fetch data when given search input                           |    H     |     2 hrs      |     1 hr      |             |
-| Appending selected data from API to DOM                                     |    H     |     4 hrs      |               |             |
+| Appending selected data from API to DOM                                     |    H     |     4 hrs      |    1.5 hr     |             |
 | Opening Recipe Link in new tab                                              |    H     |      1 hr      |               |             |
 | Clearing DOM when new search is run                                         |    H     |     2 hrs      |               |             |
 | Adding Flexbox styling to format like wireframe                             |    H     |    3.5 hrs     |               |             |
