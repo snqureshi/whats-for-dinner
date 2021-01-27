@@ -15,7 +15,7 @@ body {
 
 .banner-heading {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 4em;
+  font-size: 4vh;
   font-weight: bolder;
   color: white;
   text-transform: uppercase;
@@ -28,7 +28,7 @@ body {
 
 .banner-subheading {
   font-family: "Times New Roman", Times, serif;
-  font-size: 1.5em;
+  font-size: 1.5vh;
   font-weight: bolder;
   color: white;
   margin: 0 auto;
@@ -93,11 +93,16 @@ form {
 
 @media only screen and (max-width: 700px) {
   .banner-heading {
-    flex-shrink: initial;
+    flex-shrink: 4;
+  }
+  .banner-subheading {
+    flex-shrink: 4;
   }
 
   .ind-recipe {
     flex-flow: column;
+    align-items: center;
+    justify-content: center;
   }
   .recipe-image {
     align-items: center;
