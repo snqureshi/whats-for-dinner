@@ -6,6 +6,7 @@ const appKey = 'a221d866f1d02a09e0fd4777785d31c4'
 
 //Define async function getRecipe
 async function getRecipe() {
+  removeRecipe()
   let inputValue = document.querySelector('.search-input').value
   // console.log(inputValue)
   const url = `${domain}q=${inputValue}&app_id=${appId}&app_key=${appKey}`
@@ -51,9 +52,12 @@ async function getRecipe() {
   individualRecipes.append(ingredients)
 
     //select recipe link of each result and allow for link to open in a new tab
-      let recipeLink = document.createElement('p')
-      recipeLink.textContent = `Link to Instructions: ${recipe.recipe.url}`
+      let recipeLink = document.createElement('a')
+      recipeLink.textContent = `Link to Instructions:`
+      recipeLink.href = `${recipe.recipe.url}`
+      recipeLink.setAttribute("target","_blank")
       individualRecipes.append(recipeLink)
+      
   });
     } catch (error) {
     console.log('Ooops! There was an error, try again later.')
@@ -64,9 +68,13 @@ async function getRecipe() {
 let search = document.querySelector('.submit')
 search.addEventListener('click',getRecipe)
 
-
 //create function to remove last child of container, invoke it before forEach function
-
+function removeRecipe() {
+  const removeDiv = document.querySelector('.result-container')
+  while (removeDiv.lastChild) {
+    removeDiv.removeChild(removeDiv.lastChild)
+  }
+}
 
 
 //PMVPS: 

@@ -38,7 +38,20 @@ body {
 }
 
 form {
-  border: 1px solid white;
+  border: 1px solid #213035;
+  border-radius: 2em;
+  background-color: #2d898b;
   margin: 20px 150px;
   padding: 30px;
+}
+
+.result-container {
+  border: 1px solid white;
+  color: white;
+  text-align: center;
+}
+
+.ind-recipe {
+  border: 1px solid white;
+  margin: 15px;
 }

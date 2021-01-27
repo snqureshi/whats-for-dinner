@@ -105,7 +105,7 @@ I hope to create a website in which users can input the ingredients they already
 | ------ | ------------------------------------------------------------------------------------------------------- | ---------- |
 | Jan 25 | Project Overview / Wireframes / Priority Matrix / Timeframes                                            | Complete   |
 | Jan 26 | Project Approval / Basic Application Structure (HTML, CSS), Pseudocode functionality for JS             | Complete   |
-| Jan 27 | Getting results from API using search button, Appending the selected data to webpage in correct format  | Incomplete |
+| Jan 27 | Getting results from API using search button, Appending the selected data to webpage in correct format  | Complete   |
 | Jan 28 | Clearing search results when there is a new search input, Opening new tab when recipe linked is clicked | Incomplete |
 | Jan 29 | Add breakpoint to implement responsiveness, PMVP: Add second API for dietary restriction drop down menu | Incomplete |
 | Jan 30 | PMVPs: Open a preview page when hovering over recipe link                                               | Incomplete |
@@ -126,7 +126,7 @@ I hope to create a website in which users can input the ingredients they already
 | Linking API to fetch data when given search input                           |    H     |     2 hrs      |     1 hr      |             |
 | Appending selected data from API to DOM                                     |    H     |     4 hrs      |    1.5 hr     |             |
 | Opening Recipe Link in new tab                                              |    H     |      1 hr      |               |             |
-| Clearing DOM when new search is run                                         |    H     |     2 hrs      |               |             |
+| Clearing DOM when new search is run                                         |    H     |     2 hrs      |    0.5 hrs    |             |
 | Adding Flexbox styling to format like wireframe                             |    H     |    3.5 hrs     |               |             |
 | Adding Media Query for mobile viewing                                       |    H     |    1.5 hrs     |               |             |
 | Adding Second API for dietary restrictions drop-down menu search            |    H     |      4hrs      |               |             |
