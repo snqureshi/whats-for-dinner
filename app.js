@@ -29,17 +29,17 @@ async function getRecipe() {
       individualRecipes.classList.add('ind-recipe')
       searchContainer.append(individualRecipes)
 
-    //select the name of each result and append it to container
-      let label = document.createElement('h2')
-      // console.log(recipe.recipe.label)
-      label.textContent = recipe.recipe.label
-      // console.log(label)
-      individualRecipes.append(label)
-
     //select the image of each result and append it to container
     let image = document.createElement('img')
     image.src = recipe.recipe.image
     individualRecipes.append(image)
+      
+    //select the name of each result and append it to container
+    let label = document.createElement('h2')
+    // console.log(recipe.recipe.label)
+    label.textContent = recipe.recipe.label
+    // console.log(label)
+    individualRecipes.append(label)
 
     //select the calories of each result and append it to container
     let calories = document.createElement('h4')
@@ -53,7 +53,7 @@ async function getRecipe() {
 
     //select recipe link of each result and allow for link to open in a new tab
       let recipeLink = document.createElement('a')
-      recipeLink.textContent = `Link to Instructions:`
+      recipeLink.textContent = `Link to Instructions`
       recipeLink.href = `${recipe.recipe.url}`
       recipeLink.setAttribute("target","_blank")
       individualRecipes.append(recipeLink)
@@ -75,7 +75,6 @@ function removeRecipe() {
     removeDiv.removeChild(removeDiv.lastChild)
   }
 }
-
 
 //PMVPS: 
 //Add second API for drop down menu and let them choose dietary preferences
