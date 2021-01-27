@@ -16,7 +16,7 @@ body {
 .banner-heading {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 4em;
-  font-weight: 600;
+  font-weight: bolder;
   color: white;
   text-transform: uppercase;
   margin: 0 auto;
@@ -28,8 +28,8 @@ body {
 
 .banner-subheading {
   font-family: "Times New Roman", Times, serif;
-  font-size: 1em;
-  font-weight: 800;
+  font-size: 1.5em;
+  font-weight: bolder;
   color: white;
   margin: 0 auto;
   position: absolute;
@@ -39,10 +39,13 @@ body {
 }
 
 form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   border: 1px solid #213035;
   border-radius: 2em;
   background: #2a9d8f;
-  margin: 20px 150px;
+  margin: 20px 100px;
   padding: 30px;
 }
 
@@ -89,12 +92,15 @@ form {
 }
 
 @media only screen and (max-width: 700px) {
+  .banner-heading {
+    flex-shrink: initial;
+  }
+
   .ind-recipe {
     flex-flow: column;
   }
   .recipe-image {
     align-items: center;
     justify-content: center;
-    flex-shrink: 2;
   }
 }
