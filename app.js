@@ -1,5 +1,5 @@
 //Define Domain, API-id, API-key, base URL
-//Define an input value to be the input from the search input
+
 const domain = `https://api.edamam.com/search?`
 const appId = 'a831c57c'
 const appKey = 'a221d866f1d02a09e0fd4777785d31c4'
@@ -7,6 +7,7 @@ const appKey = 'a221d866f1d02a09e0fd4777785d31c4'
 //Define async function getRecipe
 async function getRecipe() {
   removeRecipe()
+  //Define an input value to be the input from the search input
   let inputValue = document.querySelector('.search-input').value
   // console.log(inputValue)
   const url = `${domain}q=${inputValue}&app_id=${appId}&app_key=${appKey}`
