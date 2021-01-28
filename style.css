@@ -96,6 +96,20 @@ form {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  color: white;
+}
+
+.footer-text {
+  border: 1px solid white;
+  margin: 25px 0px;
+  padding: 5px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vh;
+  font-weight: bolder;
+  text-transform: uppercase;
 }
 
 .ind-diet {
@@ -104,6 +118,9 @@ form {
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  background-color: #2a9d8f;
+  color: white;
+  margin: 30px 0px;
 }
 
 @media only screen and (max-width: 700px) {

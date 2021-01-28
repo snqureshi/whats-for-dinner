@@ -79,14 +79,18 @@ async function relatedSuggestions(dietVariable, inputValue2) {
   // console.log(dietVariable)
   // console.log(inputValue2)
 
-// // define & select for diet label from getRecipe array
 let secondUrl =`${domain}q=${inputValue2}&app_id=${appId}&app_key=${appKey}&from=0&to=3&diet${dietVariable}`
 
 // //try/catch method for getting API data
   try {
 // //  Define a variable to get data from API
 let recipeData = await axios.get(secondUrl)
-console.log(recipeData.data.hits)
+    console.log(recipeData.data.hits)
+    
+    let btext = document.createElement('div')
+    btext.classList.add('footer-text')
+    btext.innerHTML = `If you like these recipes,you might also like`
+    document.body.append(btext)
 
 // //  Add a container to contain suggestions
     let bottomContainer = document.createElement('div') 
