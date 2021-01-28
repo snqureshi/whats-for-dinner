@@ -12,12 +12,12 @@ async function getRecipe() {
   // console.log(inputValue)
   const url = `${domain}q=${inputValue}&app_id=${appId}&app_key=${appKey}`
 
-  //Define a variable to get data from API
-  let recipeData = await axios.get(url)
-  console.log(recipeData.data.hits)
-  relatedSuggestions(recipeData)
   //try/catch method for getting API data
   try {
+    //Define a variable to get data from API
+    let recipeData = await axios.get(url)
+    console.log(recipeData.data.hits)
+    relatedSuggestions(recipeData)
     //create section for appending search results 
       let searchContainer = document.querySelector('.result-container')
       console.log(searchContainer)
@@ -77,7 +77,7 @@ async function getRecipe() {
 async function relatedSuggestions() {
 
 // define & select for diet label from getRecipe array
-let dietVariable = Response.data.hits.dietLabels
+let dietVariable = response.data.hits.dietLabels
 
 let inputValue2 = document.querySelector('.search-input').value
 let secondUrl =`${domain}q=${inputValue2}&app_id=${appId}&app_key=${appKey}&from=0&to=2&diet${dietVariable}`
@@ -127,8 +127,11 @@ console.log(recipeData.data.hits)
 }
 
 //select search button, add event listener for click, invoke getRecipe
-let search = document.querySelector('.submit')
-search.addEventListener('click', getRecipe)
+let search = document.querySelector('form')
+search.addEventListener('submit', (e) => {
+  e.preventDefault()
+  getRecipe()
+})
 
 //create function to remove last child of container, invoke it before forEach function
 function removeRecipe() {
