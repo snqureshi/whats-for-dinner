@@ -72,12 +72,15 @@ async function getRecipe() {
 }
 
 
+
 //PMVP Display suggestions based on relevant diet labels on the bottom
-async function relatedSuggestions(response) {
+async function relatedSuggestions() {
 
 // define & select for diet label from getRecipe array
-let dietVariable = response.data.hits.dietLabel
-let secondUrl =`${domain}q=${inputValue}&app_id=${appId}&app_key=${appKey}&from=0&to=2&diet${dietVariable}`
+let dietVariable = Response.data.hits.dietLabels
+
+let inputValue2 = document.querySelector('.search-input').value
+let secondUrl =`${domain}q=${inputValue2}&app_id=${appId}&app_key=${appKey}&from=0&to=2&diet${dietVariable}`
 
 //Define a variable to get data from API
 let recipeData = await axios.get(secondUrl)
