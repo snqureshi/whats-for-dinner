@@ -90,6 +90,7 @@ console.log(recipeData.data.hits)
 
 // //  Add a container to contain suggestions
     let bottomContainer = document.createElement('div') 
+    bottomContainer.classList.add('bcontainer')
     document.body.append(bottomContainer)
 
     // // wrap everything in the forEach function until after catch

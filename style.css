@@ -91,6 +91,21 @@ form {
   padding: 15px 25px;
 }
 
+.bcontainer {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.ind-diet {
+  border: 1px solid white;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 700px) {
   .banner-heading {
     flex-shrink: 4;
