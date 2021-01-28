@@ -66,11 +66,17 @@ async function getRecipe() {
       textContainer.append(recipeLink)
       
     //Add footer with recommendations from same diet labels
-    // let moreRecipes = document.createElement('h3')
+      
+      
+      let bottom = document.createElement('div') 
+      document.body.append(bottom)
+      
+      
+    // let moreRecipes = document.createElement('div')
     // moreRecipes.classList.add('footer-recipes')
     // moreRecipes.textContent = recipe.recipe.dietLabels
     // console.log(moreRecipes)
-    // footer.append(moreRecipes)
+    // bottom.append(moreRecipes)
       
   });
     } catch (error) {
