@@ -65,25 +65,59 @@ async function getRecipe() {
     recipeLink.setAttribute("target","_blank")
       textContainer.append(recipeLink)
       
-    //Add footer with recommendations from same diet labels
-      
-      
-      let bottom = document.createElement('div') 
-      document.body.append(bottom)
-      
-      
-    // let moreRecipes = document.createElement('div')
-    // moreRecipes.classList.add('footer-recipes')
-    // moreRecipes.textContent = recipe.recipe.dietLabels
-    // console.log(moreRecipes)
-    // bottom.append(moreRecipes)
-      
   });
     } catch (error) {
     console.log('Ooops! There was an error, try again later.')
   }
-  //catch error message
 }
+
+//PMVP Display suggestions based on relevant diet labels on the bottom
+// async function relatedSuggestions() {
+
+// define & select for diet label from getRecipe array
+// let secondUrl =`${domain}q=${inputValue}&app_id=${appId}&app_key=${appKey}&from=0&to=2&diet{dietvariable}`
+
+//Define a variable to get data from API
+// let recipeData = await axios.get(secondUrl)
+// console.log(recipeData.data.hits)
+
+//try/catch method for getting API data
+// try {
+//   // wrap everything in the forEach function until after catch
+//   recipeData.data.hits.forEach(recipe => { 
+
+//   //Add a container to contain suggestions
+//   let bottomContainer = document.createElement('div') 
+//   document.body.append(bottomContainer)
+
+//   //create container for each seperate result & append it to the bottom container
+//   let individualSuggestions = document.createElement('div')
+//   individualSuggestions.classList.add('ind-diet')
+//   bottomContainer.append(individualSuggestions)
+    
+//   //select the name of each result and append it to bottom container
+//   let newLabel = document.createElement('h2')
+//   newLabel.textContent = recipe.recipe.label
+//   individualSuggestions.append(label)
+  
+//   //select the diet label name of each result and append it to the bottom container
+//   let recipeDiet = document.createElement('div')
+//   recipeDiet.classList.add('footer-recipes')
+//   recipeDiet.textContent = recipe.recipe.dietLabels
+//   console.log(recipeDiet)
+//   individualSuggestions.append(recipeDiet)
+    
+//   //select the image of each result and append it to bottom container
+//   let newImage = document.createElement('img')
+//   newImage.classList.add('diet-image')
+//   newImage.src = recipe.recipe.image
+//   individualSuggestions.append(newImage)
+//   })
+//   } catch (error) {
+//     console.log('Sorry, no more suggestions for now, try again later')
+//   }
+
+// }
 
 //select search button, add event listener for click, invoke getRecipe
 let search = document.querySelector('.submit')
