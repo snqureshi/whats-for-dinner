@@ -29,8 +29,11 @@ async function getRecipe() {
     }
     // console.log(recipeData.data.hits)
 
-    if (recipeData.data.hits) {
+    if (inputValue) {
       relatedSuggestions(recipeData.data.hits[0].recipe.dietLabels[0], inputValue)
+    }
+    if (inputValue.length === 0) {
+      relatedSuggestions(recipeData.data.hits[0].recipe.dietLabels[0], selectValue)
     }
 
     //create section for appending search results 
