@@ -74,6 +74,15 @@ async function getRecipe() {
   }
 }
 
+//Drop down option to select health label & still run get recipe function
+// async function getHealthValue() {
+
+//   let selectedHealthValue = document.getElementById('select-health').value
+//   console.log(selectedHealthValue)
+// }
+
+
+
 // //PMVP Display suggestions based on relevant diet labels on the bottom
 async function relatedSuggestions(dietVariable, inputValue2) {
   // console.log(dietVariable)

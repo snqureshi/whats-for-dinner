@@ -129,7 +129,7 @@ I hope to create a website in which users can input the ingredients they already
 | Clearing DOM when new search is run                                         |    H     |     2 hrs      |     1 hrs     |             |
 | Adding Flexbox styling to format like wireframe                             |    H     |    3.5 hrs     |     2 hrs     |             |
 | Adding Media Query for mobile viewing                                       |    H     |    1.5 hrs     |     2 hrs     |             |
-| Adding Second API for dietary restrictions drop-down menu search            |    H     |      4hrs      |               |             |
+| Adding Second API for dietary restrictions drop-down menu search            |    H     |      4hrs      |     2 hrs     |             |
 | Adding extra selector (ie.Diet-label) to render 3 suggestions on the footer |    H     |      3hrs      |     6 hrs     |             |
 | Adding Hover Affect over link to preview recipe page                        |    H     |    2.5 hrs     |               |             |
 | Creating Animated Logo next to search bar                                   |    H     |     3 hrs      |               |             |
