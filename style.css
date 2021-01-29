@@ -58,6 +58,7 @@ form {
 
 .form-or {
   color: white;
+  text-decoration: underline;
   font-size: large;
   padding: 0px 10px;
 }
