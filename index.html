@@ -13,26 +13,26 @@
     <div class="banner-heading"> What's for Dinner? 
     </div>
     <div class="banner-subheading">Let us take the guesswork out of planning your meals!</div>
+    <form action="">
+      <!-- https://www.w3schools.com/howto/howto_html_clear_input.asp -->
+          <input type="text" class="search-input" onfocus="this.value=''" placeholder="Search by Ingredients"/>
+          <p class="form-or">OR</p>
+          <select name='health' id='select-health' onchange="">
+            <option selected disabled>Search by Dietary Restrictions</option>
+            <option value="crustacean-free">Crustacean-Free</option>
+            <option value="dairy-free">Dairy-Free</option>
+            <option value="eggs-free">Eggs-Free</option>
+            <option value="fish-free">Fish-Free</option>
+            <option value="gluten-free">Gluten-Free</option>
+            <option value="peanut-free">Peanut-Free</option>
+            <option value="tree nuts-free">Tree Nuts-Free</option>
+            <option value="alcohol-free">Alcohol-Free</option>
+            <option value="vegan">Vegan</option>
+            <option value="vegetarian">Vegetarian</option>
+          </select>
+          <button class='submit'>Search</button>
+        </form>
   </div>
-  <form action="">
-<!-- https://www.w3schools.com/howto/howto_html_clear_input.asp -->
-    <input type="text" class="search-input" onfocus="this.value=''" placeholder="Search by Ingredients"/>
-    <p class="form-or">OR</p>
-    <select name='health' id='select-health' onchange="">
-      <option selected disabled>Search by Dietary Restrictions</option>
-      <option value="crustacean-free">Crustacean-Free</option>
-      <option value="dairy-free">Dairy-Free</option>
-      <option value="eggs-free">Eggs-Free</option>
-      <option value="fish-free">Fish-Free</option>
-      <option value="gluten-free">Gluten-Free</option>
-      <option value="peanut-free">Peanut-Free</option>
-      <option value="tree nuts-free">Tree Nuts-Free</option>
-      <option value="alcohol-free">Alcohol-Free</option>
-      <option value="vegan">Vegan</option>
-      <option value="vegetarian">Vegetarian</option>
-    </select>
-    <button class='submit'>Search</button>
-  </form>
   <div class="result-container"></div>
 
 </body>
