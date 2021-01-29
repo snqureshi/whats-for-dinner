@@ -17,8 +17,23 @@
   <form action="">
 <!-- https://www.w3schools.com/howto/howto_html_clear_input.asp -->
     <input type="text" class="search-input" onfocus="this.value=''" placeholder="Search by Ingredients"/>
+    <br>
+    <select name='health' id='select-health'>
+      <option selected disabled>Select By Dietary Restrictions</option>
+      <option>Crustacean-Free</option>
+      <option>Dairy-Free</option>
+      <option>Eggs-Free</option>
+      <option>Fish-Free</option>
+      <option>Gluten-Free</option>
+      <option>Peanut-Free</option>
+      <option>Tree Nuts-Free</option>
+      <option>Alcohol-Free</option>
+      <option>Vegan</option>
+      <option>Vegetarian</option>
+    </select>
     <input type="button" class="submit" value="search">
   </form>
   <div class="result-container"></div>
+
 </body>
 </html>
