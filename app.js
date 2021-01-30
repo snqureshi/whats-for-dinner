@@ -80,11 +80,15 @@ async function getRecipe() {
       textContainer.append(ingredients)
 
       //select recipe link of each result and allow for link to open in a new tab
+      let linkButton = document.createElement('button')
+      linkButton.classList.add('link-button')
+      textContainer.append(linkButton)
+
       let recipeLink = document.createElement('a')
       recipeLink.textContent = `Link to Full Instructions`
       recipeLink.href = `${recipe.recipe.url}`
       recipeLink.setAttribute("target", "_blank")
-      textContainer.append(recipeLink)
+      linkButton.append(recipeLink)
     })
 
     let check = document.querySelector('.result-container').hasChildNodes()
