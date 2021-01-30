@@ -67,8 +67,11 @@ async function getRecipe() {
       textContainer.append(label)
 
       //select the calories of each result and append it to container
+      let caloriesTotal = Math.round(recipe.recipe.calories)
+      console.log(caloriesTotal)
+      
       let calories = document.createElement('h4')
-      calories.textContent = `Total Calories = ${recipe.recipe.calories}`
+      calories.textContent = `Total Calories = ${caloriesTotal}`
       textContainer.append(calories)
 
       //select the ingredient list of each result and append it to container
@@ -82,7 +85,17 @@ async function getRecipe() {
       recipeLink.href = `${recipe.recipe.url}`
       recipeLink.setAttribute("target", "_blank")
       textContainer.append(recipeLink)
-    });
+    })
+
+    let check = document.querySelector('.result-container').hasChildNodes()
+    if (check !== true) {
+    
+      let errorAlert = document.createElement('h2')
+      errorAlert.classList.add('not-found')
+      errorAlert.textContent = "Result not found"
+        .result - searchContainer.append(errorAlert)
+    }
+
   } catch (error) {
     console.log('Ooops! There was an error, try again later.')
   }

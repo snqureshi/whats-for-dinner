@@ -107,9 +107,9 @@ I hope to create a website in which users can input the ingredients they already
 | Jan 26 | Project Approval / Basic Application Structure (HTML, CSS), Pseudocode functionality for JS             | Complete   |
 | Jan 27 | Getting results from API using search button, Appending the selected data to webpage in correct format  | Complete   |
 | Jan 28 | Clearing search results when there is a new search input, Opening new tab when recipe linked is clicked | Complete   |
-| Jan 29 | Add breakpoint to implement responsiveness, PMVP: Add second API for dietary restriction drop down menu | Incomplete |
+| Jan 29 | Add breakpoint to implement responsiveness, PMVP: Add second API for dietary restriction drop down menu | Complete   |
 | Jan 30 | PMVPs: Open a preview page when hovering over recipe link                                               | Incomplete |
-| Jan 31 | Add additional CSS: Animated Logo/ Image transitions                                                    | Incomplete |
+| Jan 31 | Add additional CSS: Animated Logo/ Image transitions                                                    | Complete   |
 | Feb 1  | Presentations/Project Submission                                                                        | Incomplete |
 
 ## Priority Matrix
@@ -134,7 +134,7 @@ I hope to create a website in which users can input the ingredients they already
 | Adding Hover Affect over link to preview recipe page                        |    H     |    2.5 hrs     |               |             |
 | Creating Animated Logo next to search bar                                   |    H     |     3 hrs      |               |             |
 | Adding Star button to favorite recipes                                      |    H     |     2 hrs      |               |             |
-| Debugging/Refactoring Code                                                  |    H     |     2 hrs      |               |             |
+| Debugging/Refactoring Code                                                  |    H     |     2 hrs      |     2 hrs     |             |
 | Total                                                                       |    H     |     36hrs      |               |             |
 
 ## Code Snippet
