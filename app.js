@@ -14,8 +14,8 @@ async function getRecipe() {
   let selectValue = document.querySelector('select').value
   // console.log(selectValue)
 
-  const inputUrl = `https://cors-anywhere.herokuapp.com/${domain}q=${inputValue}&app_id=${appId}&app_key=${appKey}`
-  const selectUrl = `https://cors-anywhere.herokuapp.com/${domain}q=${selectValue}&app_id=${appId}&app_key=${appKey}&health=${selectValue}`
+  const inputUrl = `${domain}q=${inputValue}&app_id=${appId}&app_key=${appKey}`
+  const selectUrl = `${domain}q=${selectValue}&app_id=${appId}&app_key=${appKey}&health=${selectValue}`
   //try/catch method for getting API data
   try {
 
@@ -85,6 +85,7 @@ async function getRecipe() {
       textContainer.append(linkButton)
 
       let recipeLink = document.createElement('a')
+      recipeLink.classList.add('recipe-link')
       recipeLink.textContent = `Link to Full Instructions`
       recipeLink.href = `${recipe.recipe.url}`
       recipeLink.setAttribute("target", "_blank")
@@ -110,7 +111,7 @@ async function relatedSuggestions(dietVariable, inputValue2) {
   // console.log(dietVariable)
   // console.log(inputValue2)
 
-  let secondUrl = `https://cors-anywhere.herokuapp.com/${domain}q=${inputValue2}&app_id=${appId}&app_key=${appKey}&from=0&to=50&diet${dietVariable}`
+  let secondUrl = `${domain}q=${inputValue2}&app_id=${appId}&app_key=${appKey}&from=0&to=50&diet${dietVariable}`
   // //try/catch method for getting API data
   try {
     // //  Define a variable to get data from API
