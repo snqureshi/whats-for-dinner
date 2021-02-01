@@ -55,7 +55,7 @@ form {
   justify-content: center;
   border: 1px solid #213035;
   border-radius: 2em;
-  background: #2a9d8f;
+  background-color: rgba(42, 157, 143, 0.8);
   margin: 20px 100px;
   padding: 25px;
   text-align: center;
@@ -189,13 +189,13 @@ form {
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    background-color: #e76f51;
+    background-color: rgba(231, 111, 81, 0.7);
   }
   .recipe-image {
     align-items: center;
     justify-content: center;
   }
   .link-button {
-    background-color: #f8b836;
+    background-color: rgba(233, 196, 106, 0.8);
   }
 }
