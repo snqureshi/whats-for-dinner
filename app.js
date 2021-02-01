@@ -22,6 +22,12 @@ async function getRecipe() {
     let recipeData = ''
     if (inputValue) {
       recipeData = await axios.get(inputUrl)
+      if (!recipeData.data.hits.length) {
+        let resultContainer = document.querySelector('.result-container')
+        const errorHandle = document.createElement('h2')
+        errorHandle.textContent = 'Sorry! Result not found, please search again.'
+        resultContainer.append(errorHandle)
+      }
     }
     
     if (inputValue.length === 0) {
@@ -87,17 +93,6 @@ async function getRecipe() {
       recipeLink.setAttribute("target", "_blank")
       linkButton.append(recipeLink)
     })
-
-    // let check = document.querySelector('.result-container').hasChildNodes()
-    // if (check !== true) {
-    //   let errorMessage = document.createElement('h2')
-    //   errorMessage.classList.add('error')
-    //   errorMessage.textContent = `Sorry! No Recipes Found, try again later`
-    //   searchContainer.append(errorMessage)
-    // }
-
-
-
 
   } catch (error) {
     console.log('Ooops! There was an error, try again later.')

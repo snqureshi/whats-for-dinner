@@ -127,7 +127,7 @@ I hope to create a website in which users can input the ingredients they already
 | Appending selected data from API to DOM                                     |    H     |     4 hrs      |    1.5 hr     |   1.5 hr    |
 | Opening Recipe Link in new tab                                              |    H     |      1 hr      |    0.25 hr    |   0.25 hr   |
 | Clearing DOM when new search is run                                         |    H     |     2 hrs      |     1 hrs     |    1 hrs    |
-| Adding Flexbox styling to format like wireframe                             |    H     |    3.5 hrs     |     2 hrs     |    2 hrs    |
+| Adding Flexbox styling to format like wireframe                             |    H     |    3.5 hrs     |     3 hrs     |    3 hrs    |
 | Adding Media Query for mobile viewing                                       |    H     |    1.5 hrs     |     2 hrs     |    2 hrs    |
 | Adding Second API for dietary restrictions drop-down menu search            |    H     |      4hrs      |     5 hrs     |    5 hrs    |
 | Adding extra selector (ie.Diet-label) to render 3 suggestions on the footer |    H     |      3hrs      |     6 hrs     |    6 hrs    |
