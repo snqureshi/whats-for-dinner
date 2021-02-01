@@ -2,6 +2,8 @@
 
 ## What's for Dinner?: Recipe Finder
 
+[What's For Dinner](https://snqureshi.github.io/whats-for-dinner/)
+
 ## Project Description
 
 I hope to create a website in which users can input the ingredients they already have at home/or are interested in and find recipes. The search results will display the name of the dish, an image, the ingredients list and the calorie count based on their search query.
