@@ -189,7 +189,7 @@ form {
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(231, 111, 81, 0.7);
+    background-color: rgba(231, 111, 81, 0.75);
   }
   .recipe-image {
     align-items: center;

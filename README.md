@@ -137,6 +137,8 @@ I hope to create a website in which users can input the ingredients they already
 
 ## Code Snippet
 
+This function provides additional results at the bottom of the page based on the diet label of the first result on the page from the input or selected value. It gets back 50 results and randomly selects 3 to be pushed on to the array displayed on the footer.
+
 ```
 if (inputValue) {
       relatedSuggestions(recipeData.data.hits[0].recipe.dietLabels[0], inputValue)
