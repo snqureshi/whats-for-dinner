@@ -12,7 +12,6 @@ async function getRecipe() {
   //Define select value from the drop down menu
   let inputValue = document.querySelector('.search-input').value
   let selectValue = document.querySelector('select').value
-  // console.log(selectValue)
 
   const inputUrl = `${domain}q=${inputValue}&app_id=${appId}&app_key=${appKey}`
   const selectUrl = `${domain}q=${selectValue}&app_id=${appId}&app_key=${appKey}&health=${selectValue}`
@@ -27,8 +26,8 @@ async function getRecipe() {
     if (inputValue.length === 0) {
       recipeData = await axios.get(selectUrl)
     }
-    // console.log(recipeData.data.hits)
-
+  
+    //Invoking footer funtion with getting related suggestions
     if (inputValue) {
       relatedSuggestions(recipeData.data.hits[0].recipe.dietLabels[0], inputValue)
     }
@@ -61,9 +60,9 @@ async function getRecipe() {
 
       //select the name of each result and append it to container
       let label = document.createElement('h2')
-      // console.log(recipe.recipe.label)
+      
       label.textContent = recipe.recipe.label
-      // console.log(label)
+      
       textContainer.append(label)
 
       //select the calories of each result and append it to container
@@ -99,8 +98,7 @@ async function getRecipe() {
 
 // //PMVP Display suggestions based on relevant diet labels on the bottom
 async function relatedSuggestions(dietVariable, inputValue2) {
-  // console.log(dietVariable)
-  // console.log(inputValue2)
+
 
   let secondUrl = `${domain}q=${inputValue2}&app_id=${appId}&app_key=${appKey}&from=0&to=50&diet${dietVariable}`
   // //try/catch method for getting API data
@@ -118,18 +116,21 @@ async function relatedSuggestions(dietVariable, inputValue2) {
     let bottomContainer = document.createElement('div')
     bottomContainer.classList.add('bcontainer')
     document.body.append(bottomContainer)
+
 //create an array with three random results from original list
     let suggestionsArray = []
     for (let i = 0; i < 3; i++) {
-      // console.log(recipeData.data.hits[Math.floor(Math.random() * recipeData.data.hits.length)])
+      
       suggestionsArray.push(recipeData.data.hits[Math.floor(Math.random() * recipeData.data.hits.length)])
     }
+
     // // wrap everything in the forEach function until after catch
     suggestionsArray.forEach(recipe => {
-      // console.log("Recipe", recipe)
+    
       let newLabelText = recipe.recipe.label
       let newDietText = recipe.recipe.dietLabels
       let newImageURL = recipe.recipe.image
+
       // //   //create container for each seperate result & append it to the bottom container
       let individualSuggestions = document.createElement('div')
       // console.log(bottomContainer)
@@ -151,6 +152,7 @@ async function relatedSuggestions(dietVariable, inputValue2) {
       newImage.src = newImageURL
       individualSuggestions.append(newImage)
     })
+
   } catch (error) {
     console.log('Sorry, no more suggestions for now, try again later')
   }
@@ -168,6 +170,3 @@ function removeRecipe() {
     removeDiv.removeChild(removeDiv.lastChild)
   }
 }
-//PMVPS: 
-//Add second API for drop down menu and let them choose dietary preferences
-//Add a star button to select favorites
