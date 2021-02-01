@@ -22,6 +22,7 @@ async function getRecipe() {
     let recipeData = ''
     if (inputValue) {
       recipeData = await axios.get(inputUrl)
+    //Run error message on page if no response from API
       if (!recipeData.data.hits.length) {
         let resultContainer = document.querySelector('.result-container')
         const errorHandle = document.createElement('h2')

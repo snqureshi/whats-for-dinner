@@ -120,22 +120,20 @@ I hope to create a website in which users can input the ingredients they already
 
 | Component                                                                   | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Creating Initial HTML/Creating Form Input & Search Button                   |    H     |    1.5 hrs     |     1 hr      |    1 hr     |
+| Creating Initial HTML/Creating Form Input & Search Button                   |    H     |    1.5 hrs     |     2 hr      |    2 hr     |
 | Adding Basic CSS/Formatting Background Image for header                     |    H     |    1.5 hrs     |    1.5 hrs    |   1.5 hrs   |
 | Writing JS Pseudocode                                                       |    H     |    1.5 hrs     |     1 hr      |    1 hr     |
 | Linking API to fetch data when given search input                           |    H     |     2 hrs      |     2 hr      |    2 hr     |
 | Appending selected data from API to DOM                                     |    H     |     4 hrs      |    1.5 hr     |   1.5 hr    |
-| Opening Recipe Link in new tab                                              |    H     |      1 hr      |    0.25 hr    |   0.25 hr   |
+| Opening Recipe Link in new tab                                              |    H     |      1 hr      |    0.5 hr     |   0.5 hr    |
 | Clearing DOM when new search is run                                         |    H     |     2 hrs      |     1 hrs     |    1 hrs    |
 | Adding Flexbox styling to format like wireframe                             |    H     |    3.5 hrs     |     3 hrs     |    3 hrs    |
 | Adding Media Query for mobile viewing                                       |    H     |    1.5 hrs     |     2 hrs     |    2 hrs    |
 | Adding Second API for dietary restrictions drop-down menu search            |    H     |      4hrs      |     5 hrs     |    5 hrs    |
 | Adding extra selector (ie.Diet-label) to render 3 suggestions on the footer |    H     |      3hrs      |     6 hrs     |    6 hrs    |
-| Adding Hover Affect over link to preview recipe page                        |    H     |    2.5 hrs     |     0 hr      |    0 hr     |
-| Creating Animated Logo next to search bar                                   |    H     |     3 hrs      |     0 hr      |    0 hr     |
-| Adding Star button to favorite recipes                                      |    H     |     2 hrs      |     o hr      |    0 hr     |
+| Additional CSS Styling                                                      |    H     |    2.5 hrs     |     3 hr      |    3 hr     |
 | Debugging/Refactoring Code                                                  |    H     |     2 hrs      |     2 hrs     |    2 hrs    |
-| Total                                                                       |    H     |     36hrs      |               |             |
+| Total                                                                       |    H     |      28.5      |     30.5      |    30.5     |
 
 ## Code Snippet
 
