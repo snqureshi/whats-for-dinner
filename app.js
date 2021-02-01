@@ -15,6 +15,7 @@ async function getRecipe() {
 
   const inputUrl = `${domain}q=${inputValue}&app_id=${appId}&app_key=${appKey}`
   const selectUrl = `${domain}q=${selectValue}&app_id=${appId}&app_key=${appKey}&health=${selectValue}`
+  
   //try/catch method for getting API data
   try {
 
