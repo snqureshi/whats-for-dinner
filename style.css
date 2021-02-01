@@ -113,6 +113,11 @@ form {
   padding: 15px 25px;
 }
 
+.ingredients {
+  word-wrap: break-word;
+  max-width: 400px;
+}
+
 /* https://www.youtube.com/watch?v=zPcvAwp71uA */
 .link-button {
   width: 150px;

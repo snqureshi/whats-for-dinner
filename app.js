@@ -23,6 +23,7 @@ async function getRecipe() {
     if (inputValue) {
       recipeData = await axios.get(inputUrl)
     }
+    
     if (inputValue.length === 0) {
       recipeData = await axios.get(selectUrl)
     }
@@ -59,9 +60,7 @@ async function getRecipe() {
 
       //select the name of each result and append it to container
       let label = document.createElement('h2')
-      
       label.textContent = recipe.recipe.label
-      
       textContainer.append(label)
 
       //select the calories of each result and append it to container
@@ -72,6 +71,7 @@ async function getRecipe() {
 
       //select the ingredient list of each result and append it to container
       let ingredients = document.createElement('p')
+      ingredients.classList.add('ingredients')
       ingredients.textContent = `You'll need ${recipe.recipe.ingredientLines}`
       textContainer.append(ingredients)
 
@@ -88,13 +88,15 @@ async function getRecipe() {
       linkButton.append(recipeLink)
     })
 
-    let check = document.querySelector('.result-container').hasChildNodes()
-    if (check !== true) {
-      let errorMessage = document.createElement('h2')
-      errorMessage.classList.add('error')
-      errorMessage.textContent = `Sorry! No Recipes Found, try again later`
-      searchContainer.append(errorMessage)
-    }
+    // let check = document.querySelector('.result-container').hasChildNodes()
+    // if (check !== true) {
+    //   let errorMessage = document.createElement('h2')
+    //   errorMessage.classList.add('error')
+    //   errorMessage.textContent = `Sorry! No Recipes Found, try again later`
+    //   searchContainer.append(errorMessage)
+    // }
+
+
 
 
   } catch (error) {
