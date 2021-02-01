@@ -157,7 +157,7 @@ async function relatedSuggestions(dietVariable, inputValue2) {
     for (let i = 0; i < 3; i++) {
       suggestionsArray.push(recipeData.data.hits[Math.floor(Math.random() * recipeData.data.hits.length)])
     }
-    suggestionsArray.forEach(recipe => {}
+    suggestionsArray.forEach(recipe => {...}
 
 ```
 

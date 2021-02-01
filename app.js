@@ -37,7 +37,6 @@ async function getRecipe() {
 
     //create section for appending search results 
     let searchContainer = document.querySelector('.result-container')
-    console.log(searchContainer)
 
     // wrap everything in the forEach function until after catch
     recipeData.data.hits.forEach(recipe => {
@@ -67,8 +66,6 @@ async function getRecipe() {
 
       //select the calories of each result and append it to container
       let caloriesTotal = Math.round(recipe.recipe.calories)
-      console.log(caloriesTotal)
-      
       let calories = document.createElement('h4')
       calories.textContent = `Total Calories = ${caloriesTotal}`
       textContainer.append(calories)
@@ -90,6 +87,15 @@ async function getRecipe() {
       recipeLink.setAttribute("target", "_blank")
       linkButton.append(recipeLink)
     })
+
+    let check = document.querySelector('.result-container').hasChildNodes()
+    if (check !== true) {
+      let errorMessage = document.createElement('h2')
+      errorMessage.classList.add('error')
+      errorMessage.textContent = `Sorry! No Recipes Found, try again later`
+      searchContainer.append(errorMessage)
+    }
+
 
   } catch (error) {
     console.log('Ooops! There was an error, try again later.')
@@ -133,19 +139,20 @@ async function relatedSuggestions(dietVariable, inputValue2) {
 
       // //   //create container for each seperate result & append it to the bottom container
       let individualSuggestions = document.createElement('div')
-      // console.log(bottomContainer)
       individualSuggestions.classList.add('ind-diet')
       bottomContainer.append(individualSuggestions)
+
       // //   //select the name of each result and append it to bottom container
       let newLabel = document.createElement('h2')
       newLabel.textContent = newLabelText
       individualSuggestions.append(newLabel)
+
       //select the diet label name of each result and append it to the bottom container
       let recipeDiet = document.createElement('div')
       recipeDiet.classList.add('footer-recipes')
       recipeDiet.textContent = newDietText
-      // console.log(recipeDiet)
       individualSuggestions.append(recipeDiet)
+
       // //   //select the image of each result and append it to bottom container
       let newImage = document.createElement('img')
       newImage.classList.add('diet-image')
