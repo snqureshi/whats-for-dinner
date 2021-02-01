@@ -109,7 +109,7 @@ I hope to create a website in which users can input the ingredients they already
 | Jan 28 | Clearing search results when there is a new search input, Opening new tab when recipe linked is clicked | Complete   |
 | Jan 29 | Add breakpoint to implement responsiveness, PMVP: Add second API for dietary restriction drop down menu | Complete   |
 | Jan 30 | PMVPs: Open a preview page when hovering over recipe link                                               | Incomplete |
-| Jan 31 | Add additional CSS: Animated Logo/ Image transitions                                                    | Complete   |
+| Jan 31 | Add additional CSS: Animated Logo/ Image transitions                                                    | Incomplete |
 | Feb 1  | Presentations/Project Submission                                                                        | Incomplete |
 
 ## Priority Matrix
@@ -120,33 +120,47 @@ I hope to create a website in which users can input the ingredients they already
 
 | Component                                                                   | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------------------------------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Creating Initial HTML/Creating Form Input & Search Button                   |    H     |    1.5 hrs     |     1 hr      |             |
-| Adding Basic CSS/Formatting Background Image for header                     |    H     |    1.5 hrs     |    1.5 hrs    |             |
-| Writing JS Pseudocode                                                       |    H     |    1.5 hrs     |    0.75 hr    |             |
-| Linking API to fetch data when given search input                           |    H     |     2 hrs      |     1 hr      |             |
-| Appending selected data from API to DOM                                     |    H     |     4 hrs      |    1.5 hr     |             |
-| Opening Recipe Link in new tab                                              |    H     |      1 hr      |    0.25 hr    |             |
-| Clearing DOM when new search is run                                         |    H     |     2 hrs      |     1 hrs     |             |
-| Adding Flexbox styling to format like wireframe                             |    H     |    3.5 hrs     |     2 hrs     |             |
-| Adding Media Query for mobile viewing                                       |    H     |    1.5 hrs     |     2 hrs     |             |
-| Adding Second API for dietary restrictions drop-down menu search            |    H     |      4hrs      |     5 hrs     |             |
-| Adding extra selector (ie.Diet-label) to render 3 suggestions on the footer |    H     |      3hrs      |     6 hrs     |             |
-| Adding Hover Affect over link to preview recipe page                        |    H     |    2.5 hrs     |               |             |
-| Creating Animated Logo next to search bar                                   |    H     |     3 hrs      |               |             |
-| Adding Star button to favorite recipes                                      |    H     |     2 hrs      |               |             |
-| Debugging/Refactoring Code                                                  |    H     |     2 hrs      |     2 hrs     |             |
+| Creating Initial HTML/Creating Form Input & Search Button                   |    H     |    1.5 hrs     |     1 hr      |    1 hr     |
+| Adding Basic CSS/Formatting Background Image for header                     |    H     |    1.5 hrs     |    1.5 hrs    |   1.5 hrs   |
+| Writing JS Pseudocode                                                       |    H     |    1.5 hrs     |     1 hr      |    1 hr     |
+| Linking API to fetch data when given search input                           |    H     |     2 hrs      |     2 hr      |    2 hr     |
+| Appending selected data from API to DOM                                     |    H     |     4 hrs      |    1.5 hr     |   1.5 hr    |
+| Opening Recipe Link in new tab                                              |    H     |      1 hr      |    0.25 hr    |   0.25 hr   |
+| Clearing DOM when new search is run                                         |    H     |     2 hrs      |     1 hrs     |    1 hrs    |
+| Adding Flexbox styling to format like wireframe                             |    H     |    3.5 hrs     |     2 hrs     |    2 hrs    |
+| Adding Media Query for mobile viewing                                       |    H     |    1.5 hrs     |     2 hrs     |    2 hrs    |
+| Adding Second API for dietary restrictions drop-down menu search            |    H     |      4hrs      |     5 hrs     |    5 hrs    |
+| Adding extra selector (ie.Diet-label) to render 3 suggestions on the footer |    H     |      3hrs      |     6 hrs     |    6 hrs    |
+| Adding Hover Affect over link to preview recipe page                        |    H     |    2.5 hrs     |     0 hr      |    0 hr     |
+| Creating Animated Logo next to search bar                                   |    H     |     3 hrs      |     0 hr      |    0 hr     |
+| Adding Star button to favorite recipes                                      |    H     |     2 hrs      |     o hr      |    0 hr     |
+| Debugging/Refactoring Code                                                  |    H     |     2 hrs      |     2 hrs     |    2 hrs    |
 | Total                                                                       |    H     |     36hrs      |               |             |
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
-
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+if (inputValue) {
+      relatedSuggestions(recipeData.data.hits[0].recipe.dietLabels[0], inputValue)
+    }
+    if (inputValue.length === 0) {
+      relatedSuggestions(recipeData.data.hits[0].recipe.dietLabels[0], selectValue)
+    }
+async function relatedSuggestions(dietVariable, inputValue2) {
+
+  let secondUrl = `${domain}q=${inputValue2}&app_id=${appId}&app_key=${appKey}&from=0&to=50&diet${dietVariable}`
+
+  try {
+    let recipeData = await axios.get(secondUrl)
+
+    let suggestionsArray = []
+    for (let i = 0; i < 3; i++) {
+      suggestionsArray.push(recipeData.data.hits[Math.floor(Math.random() * recipeData.data.hits.length)])
+    }
+    suggestionsArray.forEach(recipe => {}
+
 ```
 
 ## Change Log
 
-Use this section to document what changes were made and the reasoning behind those changes.
+I changed some of the options for the dietary drop down menu based on what I was able to fetch back from the API. For commercial uses, they allow for more health labels, but for students, the number of health labels was limited.

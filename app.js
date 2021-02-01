@@ -92,19 +92,10 @@ async function getRecipe() {
       linkButton.append(recipeLink)
     })
 
-    let check = document.querySelector('.result-container').hasChildNodes()
-    if (check !== true) {
-    
-      let errorAlert = document.createElement('h2')
-      errorAlert.classList.add('not-found')
-      errorAlert.textContent = "Result not found"
-        .result - searchContainer.append(errorAlert)
-    }
-
   } catch (error) {
     console.log('Ooops! There was an error, try again later.')
+    }
   }
-}
 
 // //PMVP Display suggestions based on relevant diet labels on the bottom
 async function relatedSuggestions(dietVariable, inputValue2) {
